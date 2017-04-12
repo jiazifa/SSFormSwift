@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008A7C9B88AECFA3CCC0354CE7E7DA15 /* Pods-SSFormSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699FE78F772FD29E20134C0725084E7 /* Pods-SSFormSwift_Tests-dummy.m */; };
+		098F28430F0BC42DE28F9C41A0508D43 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8CAD8FAA9DB6D91108ACC6E60F18C6 /* BaseCell.swift */; };
+		106BFBF99ACA2C77A8E471622BB1D802 /* SSFormSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89684EA4564971E4D9516701A92CC789 /* SSFormSwift-dummy.m */; };
+		307C4FA05639A0F9566CA394A8792EAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		46AD5FDB7488AE2938ED4A39CBA1259D /* SSFormSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8841113A45068A5C2D858F58AE8BA0C /* SSFormSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D50B7CFB619901AE3C46DA1227D6147 /* FormRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740641D6359646476716FA9EB05A050D /* FormRow.swift */; };
+		53D24DC57F5E2E7BCD49C37093DA0A99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		5938105F35A77956BD76C48F06D5D50D /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2DE87C89BD996BAB84BC2C18679153 /* Core.swift */; };
+		5B2CAEB21F09831DD792BF647DBFDF56 /* Pods-SSFormSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B3BBCD473D77735338CE4260CE0FCF /* Pods-SSFormSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A5A839289147BC9588476F0329EE54 /* FormProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3246EAB36EE821C917E58CFA839C19 /* FormProtocols.swift */; };
+		84095FD3F32BDEF4390AD47CD24C6616 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF6AD99623B016F77C46F42B61592B /* Form.swift */; };
+		913828E54D8E5C0DD32EBA9D99B8374B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		AD89EA15B79518052FB8AF8DF11CDE37 /* FormTableViewSourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7B15FC073420371A2417D2703089A /* FormTableViewSourceHelper.swift */; };
+		C1097181E5F753E96AC18653B19EF383 /* FormCellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D79020B28BCD758866D392381BA5537 /* FormCellProtocols.swift */; };
+		DF96FEEA893E4896306BD2027549C45C /* Pods-SSFormSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B06980B7E5004A1ABE20D04EC39FEEF /* Pods-SSFormSwift_Example-dummy.m */; };
+		E6B173862C21D3B9FEC203037AE91F32 /* FormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C178F5B98250A1E1DE9607240D323CD4 /* FormSection.swift */; };
+		E7DF49EFAF2E279EE87C716DD3D1EA7B /* FormRowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F0D047FCD612ECED730216142899A /* FormRowProtocols.swift */; };
+		EDBCAC0B4A3423ACF66A63512E0879C2 /* Pods-SSFormSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92D68E200625CD04E262902B1E140924 /* Pods-SSFormSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F073CD6D73614C39496985D8ECE834B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C625CC18ADE747D3CEAF524E6AF5FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB9517497A8306F0A3247FABF3B82C70;
+			remoteInfo = SSFormSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B3BBCD473D77735338CE4260CE0FCF /* Pods-SSFormSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSFormSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		06E69A719EDBF6E42FEFC7530EB47D40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B18B4DB560A78978A75374F11464E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2699FE78F772FD29E20134C0725084E7 /* Pods-SSFormSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSFormSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		2A3F0D047FCD612ECED730216142899A /* FormRowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormRowProtocols.swift; sourceTree = "<group>"; };
+		2A8B836ED4D5B781B61EC4E69DFCDCDE /* Pods-SSFormSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFormSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3B06980B7E5004A1ABE20D04EC39FEEF /* Pods-SSFormSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSFormSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		4AFDC3E0ADFFEE676679C19EF9CEDF8E /* Pods-SSFormSwift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSFormSwift_Example-resources.sh"; sourceTree = "<group>"; };
+		5232B99B90747B62731BB19A37291BD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C8179D30371D7160B4A6D9696803501 /* SSFormSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSFormSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D79020B28BCD758866D392381BA5537 /* FormCellProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormCellProtocols.swift; sourceTree = "<group>"; };
+		740641D6359646476716FA9EB05A050D /* FormRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormRow.swift; sourceTree = "<group>"; };
+		7B8CAD8FAA9DB6D91108ACC6E60F18C6 /* BaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		7F20567BCB91A98AE84CAE3CF35F3048 /* Pods_SSFormSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSFormSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89684EA4564971E4D9516701A92CC789 /* SSFormSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSFormSwift-dummy.m"; sourceTree = "<group>"; };
+		92D68E200625CD04E262902B1E140924 /* Pods-SSFormSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSFormSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E3246EAB36EE821C917E58CFA839C19 /* FormProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormProtocols.swift; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB2DE87C89BD996BAB84BC2C18679153 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		ACE87BA62A8072B60EB38FFD89E754D0 /* Pods-SSFormSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSFormSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AEF7CB2DA06093F36139BC2AD24FC338 /* Pods-SSFormSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFormSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B1563986751F32A50E9958EE96A4C677 /* Pods-SSFormSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SSFormSwift_Example.modulemap"; sourceTree = "<group>"; };
+		B2D2DC259CB73FB85E1E1D7999018C96 /* Pods-SSFormSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSFormSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B8841113A45068A5C2D858F58AE8BA0C /* SSFormSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSFormSwift-umbrella.h"; sourceTree = "<group>"; };
+		B9DBEB77DC5DC69273254B7619F35615 /* Pods-SSFormSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSFormSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9DF6AD99623B016F77C46F42B61592B /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		BDC2FDAAB85F17D5506312504A5115C1 /* SSFormSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSFormSwift-prefix.pch"; sourceTree = "<group>"; };
+		C178F5B98250A1E1DE9607240D323CD4 /* FormSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormSection.swift; sourceTree = "<group>"; };
+		C2E0516BEB354DFC37E5D31F96950529 /* Pods-SSFormSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFormSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D7B15FC073420371A2417D2703089A /* FormTableViewSourceHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormTableViewSourceHelper.swift; sourceTree = "<group>"; };
+		C59F7CB7BBDE34DF0AA2AC0DA49AEF49 /* Pods-SSFormSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSFormSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7AEC6C5D560E6AD8A4DAE50B8360634 /* Pods-SSFormSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSFormSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9A06291EF928B4AC7A20E091E156223 /* Pods_SSFormSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSFormSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D374617AB9E83DAB3383A52A795DC561 /* SSFormSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SSFormSwift.modulemap; sourceTree = "<group>"; };
+		DE26DCC088BDFE8FF1D67E7D361DA548 /* Pods-SSFormSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSFormSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E0C1410528ACA383594CAF9693DC46E5 /* Pods-SSFormSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSFormSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EB7879498C9D86C09A91ACBC1D1FFAC6 /* Pods-SSFormSwift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSFormSwift_Tests-resources.sh"; sourceTree = "<group>"; };
+		ED5199B42EB8176AF090BC7C1EA40991 /* SSFormSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSFormSwift.xcconfig; sourceTree = "<group>"; };
+		FB7FD2AF3E6FA74089A4698EEECB25A2 /* Pods-SSFormSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SSFormSwift_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10F2D951640D5FD48CAC228B52EC0775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F073CD6D73614C39496985D8ECE834B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512432636B1081E626D97560D200832C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307C4FA05639A0F9566CA394A8792EAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EBF58B67DC838B0BD56F54005AAF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D24DC57F5E2E7BCD49C37093DA0A99 /* Foundation.framework in Frameworks */,
+				913828E54D8E5C0DD32EBA9D99B8374B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AD9ACF596EA2291616285A799F2E4F2 /* SSFormSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4A59EA1D309C6DC768A3D251FFCE4D78 /* SSFormSwift */,
+				530DD090F8F438EE7D86028DA8CB4DAC /* Support Files */,
+			);
+			name = SSFormSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1F316E07DB5045F403808271A273183E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84057D57B74803EDA2FA448A9278AE8E /* Pods-SSFormSwift_Example */,
+				1F7119C57D50243C2B5C7D20C1CED7B5 /* Pods-SSFormSwift_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1F7119C57D50243C2B5C7D20C1CED7B5 /* Pods-SSFormSwift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				06E69A719EDBF6E42FEFC7530EB47D40 /* Info.plist */,
+				FB7FD2AF3E6FA74089A4698EEECB25A2 /* Pods-SSFormSwift_Tests.modulemap */,
+				ACE87BA62A8072B60EB38FFD89E754D0 /* Pods-SSFormSwift_Tests-acknowledgements.markdown */,
+				B9DBEB77DC5DC69273254B7619F35615 /* Pods-SSFormSwift_Tests-acknowledgements.plist */,
+				2699FE78F772FD29E20134C0725084E7 /* Pods-SSFormSwift_Tests-dummy.m */,
+				DE26DCC088BDFE8FF1D67E7D361DA548 /* Pods-SSFormSwift_Tests-frameworks.sh */,
+				EB7879498C9D86C09A91ACBC1D1FFAC6 /* Pods-SSFormSwift_Tests-resources.sh */,
+				03B3BBCD473D77735338CE4260CE0FCF /* Pods-SSFormSwift_Tests-umbrella.h */,
+				C2E0516BEB354DFC37E5D31F96950529 /* Pods-SSFormSwift_Tests.debug.xcconfig */,
+				E0C1410528ACA383594CAF9693DC46E5 /* Pods-SSFormSwift_Tests.release.xcconfig */,
+			);
+			name = "Pods-SSFormSwift_Tests";
+			path = "Target Support Files/Pods-SSFormSwift_Tests";
+			sourceTree = "<group>";
+		};
+		205326BC9B6B5EF241E073477CF15AC2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B8CAD8FAA9DB6D91108ACC6E60F18C6 /* BaseCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		30A620F44FB9F12383ED4A6CA8F426F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A06291EF928B4AC7A20E091E156223 /* Pods_SSFormSwift_Example.framework */,
+				7F20567BCB91A98AE84CAE3CF35F3048 /* Pods_SSFormSwift_Tests.framework */,
+				5C8179D30371D7160B4A6D9696803501 /* SSFormSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A59EA1D309C6DC768A3D251FFCE4D78 /* SSFormSwift */ = {
+			isa = PBXGroup;
+			children = (
+				205326BC9B6B5EF241E073477CF15AC2 /* Cells */,
+				5EEBBD3A7B75B6CB26A4984328471276 /* Core */,
+				C05819CBB2A69BBE8C767486D008EA96 /* Descriptors */,
+			);
+			path = SSFormSwift;
+			sourceTree = "<group>";
+		};
+		530DD090F8F438EE7D86028DA8CB4DAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17B18B4DB560A78978A75374F11464E4 /* Info.plist */,
+				D374617AB9E83DAB3383A52A795DC561 /* SSFormSwift.modulemap */,
+				ED5199B42EB8176AF090BC7C1EA40991 /* SSFormSwift.xcconfig */,
+				89684EA4564971E4D9516701A92CC789 /* SSFormSwift-dummy.m */,
+				BDC2FDAAB85F17D5506312504A5115C1 /* SSFormSwift-prefix.pch */,
+				B8841113A45068A5C2D858F58AE8BA0C /* SSFormSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SSFormSwift";
+			sourceTree = "<group>";
+		};
+		5EEBBD3A7B75B6CB26A4984328471276 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DE87C89BD996BAB84BC2C18679153 /* Core.swift */,
+				5D79020B28BCD758866D392381BA5537 /* FormCellProtocols.swift */,
+				9E3246EAB36EE821C917E58CFA839C19 /* FormProtocols.swift */,
+				2A3F0D047FCD612ECED730216142899A /* FormRowProtocols.swift */,
+				C3D7B15FC073420371A2417D2703089A /* FormTableViewSourceHelper.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CEA0CFC77C6B94D110B935B3B9EDDAEF /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				30A620F44FB9F12383ED4A6CA8F426F4 /* Products */,
+				1F316E07DB5045F403808271A273183E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84057D57B74803EDA2FA448A9278AE8E /* Pods-SSFormSwift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5232B99B90747B62731BB19A37291BD7 /* Info.plist */,
+				B1563986751F32A50E9958EE96A4C677 /* Pods-SSFormSwift_Example.modulemap */,
+				C59F7CB7BBDE34DF0AA2AC0DA49AEF49 /* Pods-SSFormSwift_Example-acknowledgements.markdown */,
+				C7AEC6C5D560E6AD8A4DAE50B8360634 /* Pods-SSFormSwift_Example-acknowledgements.plist */,
+				3B06980B7E5004A1ABE20D04EC39FEEF /* Pods-SSFormSwift_Example-dummy.m */,
+				B2D2DC259CB73FB85E1E1D7999018C96 /* Pods-SSFormSwift_Example-frameworks.sh */,
+				4AFDC3E0ADFFEE676679C19EF9CEDF8E /* Pods-SSFormSwift_Example-resources.sh */,
+				92D68E200625CD04E262902B1E140924 /* Pods-SSFormSwift_Example-umbrella.h */,
+				2A8B836ED4D5B781B61EC4E69DFCDCDE /* Pods-SSFormSwift_Example.debug.xcconfig */,
+				AEF7CB2DA06093F36139BC2AD24FC338 /* Pods-SSFormSwift_Example.release.xcconfig */,
+			);
+			name = "Pods-SSFormSwift_Example";
+			path = "Target Support Files/Pods-SSFormSwift_Example";
+			sourceTree = "<group>";
+		};
+		C05819CBB2A69BBE8C767486D008EA96 /* Descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				B9DF6AD99623B016F77C46F42B61592B /* Form.swift */,
+				740641D6359646476716FA9EB05A050D /* FormRow.swift */,
+				C178F5B98250A1E1DE9607240D323CD4 /* FormSection.swift */,
+			);
+			path = Descriptors;
+			sourceTree = "<group>";
+		};
+		CEA0CFC77C6B94D110B935B3B9EDDAEF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AD9ACF596EA2291616285A799F2E4F2 /* SSFormSwift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29CAFE6F90A6478537FDCAC066F07571 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBCAC0B4A3423ACF66A63512E0879C2 /* Pods-SSFormSwift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6F24E1B3703C219ED0CE8E8B277AF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46AD5FDB7488AE2938ED4A39CBA1259D /* SSFormSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95081C2F84BA7FAD2837D38232FC4C8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2CAEB21F09831DD792BF647DBFDF56 /* Pods-SSFormSwift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B81EA64E8A3D532D52D9B4C439160208 /* Pods-SSFormSwift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2476721C2F7F1B3EF19A26685DDB0ED8 /* Build configuration list for PBXNativeTarget "Pods-SSFormSwift_Example" */;
+			buildPhases = (
+				0450242A1F616A043040964B0A69CEAA /* Sources */,
+				10F2D951640D5FD48CAC228B52EC0775 /* Frameworks */,
+				29CAFE6F90A6478537FDCAC066F07571 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD874B4E607202E1B729F0BB6A744915 /* PBXTargetDependency */,
+			);
+			name = "Pods-SSFormSwift_Example";
+			productName = "Pods-SSFormSwift_Example";
+			productReference = C9A06291EF928B4AC7A20E091E156223 /* Pods_SSFormSwift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4CD79DA55792AF0E0345E266869BFEC /* Pods-SSFormSwift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDDE977F33B81E2BB7B833B4C6DC214 /* Build configuration list for PBXNativeTarget "Pods-SSFormSwift_Tests" */;
+			buildPhases = (
+				B8E504F04CA27DD3C6C35C098A908132 /* Sources */,
+				512432636B1081E626D97560D200832C /* Frameworks */,
+				95081C2F84BA7FAD2837D38232FC4C8B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SSFormSwift_Tests";
+			productName = "Pods-SSFormSwift_Tests";
+			productReference = 7F20567BCB91A98AE84CAE3CF35F3048 /* Pods_SSFormSwift_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB9517497A8306F0A3247FABF3B82C70 /* SSFormSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2EC28DAAAB701F1D3516EB1F6FBD2BC /* Build configuration list for PBXNativeTarget "SSFormSwift" */;
+			buildPhases = (
+				F05050542645EBFF1041B6BEB1D50484 /* Sources */,
+				F9EBF58B67DC838B0BD56F54005AAF38 /* Frameworks */,
+				8C6F24E1B3703C219ED0CE8E8B277AF4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSFormSwift;
+			productName = SSFormSwift;
+			productReference = 5C8179D30371D7160B4A6D9696803501 /* SSFormSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 30A620F44FB9F12383ED4A6CA8F426F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B81EA64E8A3D532D52D9B4C439160208 /* Pods-SSFormSwift_Example */,
+				C4CD79DA55792AF0E0345E266869BFEC /* Pods-SSFormSwift_Tests */,
+				DB9517497A8306F0A3247FABF3B82C70 /* SSFormSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0450242A1F616A043040964B0A69CEAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF96FEEA893E4896306BD2027549C45C /* Pods-SSFormSwift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E504F04CA27DD3C6C35C098A908132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008A7C9B88AECFA3CCC0354CE7E7DA15 /* Pods-SSFormSwift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05050542645EBFF1041B6BEB1D50484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098F28430F0BC42DE28F9C41A0508D43 /* BaseCell.swift in Sources */,
+				5938105F35A77956BD76C48F06D5D50D /* Core.swift in Sources */,
+				84095FD3F32BDEF4390AD47CD24C6616 /* Form.swift in Sources */,
+				C1097181E5F753E96AC18653B19EF383 /* FormCellProtocols.swift in Sources */,
+				79A5A839289147BC9588476F0329EE54 /* FormProtocols.swift in Sources */,
+				4D50B7CFB619901AE3C46DA1227D6147 /* FormRow.swift in Sources */,
+				E7DF49EFAF2E279EE87C716DD3D1EA7B /* FormRowProtocols.swift in Sources */,
+				E6B173862C21D3B9FEC203037AE91F32 /* FormSection.swift in Sources */,
+				AD89EA15B79518052FB8AF8DF11CDE37 /* FormTableViewSourceHelper.swift in Sources */,
+				106BFBF99ACA2C77A8E471622BB1D802 /* SSFormSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD874B4E607202E1B729F0BB6A744915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSFormSwift;
+			target = DB9517497A8306F0A3247FABF3B82C70 /* SSFormSwift */;
+			targetProxy = 9C625CC18ADE747D3CEAF524E6AF5FCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E2BA36F5D8F131946A726EBEA15E40C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF7CB2DA06093F36139BC2AD24FC338 /* Pods-SSFormSwift_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSFormSwift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSFormSwift_Example/Pods-SSFormSwift_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SSFormSwift_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64B938569150B09E20635B9140F8C0E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E0516BEB354DFC37E5D31F96950529 /* Pods-SSFormSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSFormSwift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSFormSwift_Tests/Pods-SSFormSwift_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SSFormSwift_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		693638BD16EF49C8CF5E0A3112E49B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5199B42EB8176AF090BC7C1EA40991 /* SSFormSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSFormSwift/SSFormSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSFormSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSFormSwift/SSFormSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSFormSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A755A94F94EC836C3A88C8D7C980D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C1410528ACA383594CAF9693DC46E5 /* Pods-SSFormSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSFormSwift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSFormSwift_Tests/Pods-SSFormSwift_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SSFormSwift_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D474D1B59DC5887D7A84EBC60EB4750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8B836ED4D5B781B61EC4E69DFCDCDE /* Pods-SSFormSwift_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSFormSwift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSFormSwift_Example/Pods-SSFormSwift_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SSFormSwift_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F46C3FBE5B30497C05ABBC337C8D33BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5199B42EB8176AF090BC7C1EA40991 /* SSFormSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSFormSwift/SSFormSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSFormSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSFormSwift/SSFormSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSFormSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FDDE977F33B81E2BB7B833B4C6DC214 /* Build configuration list for PBXNativeTarget "Pods-SSFormSwift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B938569150B09E20635B9140F8C0E3 /* Debug */,
+				8A755A94F94EC836C3A88C8D7C980D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2476721C2F7F1B3EF19A26685DDB0ED8 /* Build configuration list for PBXNativeTarget "Pods-SSFormSwift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D474D1B59DC5887D7A84EBC60EB4750 /* Debug */,
+				5E2BA36F5D8F131946A726EBEA15E40C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2EC28DAAAB701F1D3516EB1F6FBD2BC /* Build configuration list for PBXNativeTarget "SSFormSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46C3FBE5B30497C05ABBC337C8D33BD /* Debug */,
+				693638BD16EF49C8CF5E0A3112E49B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

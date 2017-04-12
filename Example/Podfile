@@ -6,6 +6,5 @@ target 'SSFormSwift_Example' do
   target 'SSFormSwift_Tests' do
     inherit! :search_paths
 
-    
   end
 end

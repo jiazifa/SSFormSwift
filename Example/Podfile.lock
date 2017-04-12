@@ -1,0 +1,16 @@
+PODS:
+  - SSFormSwift (0.1.0)
+
+DEPENDENCIES:
+  - SSFormSwift (from `../`)
+
+EXTERNAL SOURCES:
+  SSFormSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSFormSwift: 35839e64f14bce323c91abb7aa98b92a7b122180
+
+PODFILE CHECKSUM: ab33d829b44fb8ddb4136a05602837399ead2e59
+
+COCOAPODS: 1.0.1

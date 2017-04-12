@@ -1,0 +1,23 @@
+{
+  "name": "SSFormSwift",
+  "version": "0.1.0",
+  "summary": "SSFormSwift is a fundation of tableView",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jiazifa/SSFormSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jiazifa": "2332532718@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jiazifa/SSFormSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SSFormSwift/**/*",
+  "frameworks": "UIKit"
+}
