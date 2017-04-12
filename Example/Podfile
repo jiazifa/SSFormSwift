@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSFormSwift_Example' do
+  pod 'SSFormSwift', :path => '../'
+
+  target 'SSFormSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
