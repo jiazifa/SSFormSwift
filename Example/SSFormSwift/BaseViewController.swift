@@ -37,7 +37,10 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         view.addSubview(self.formTable)
         self.formTable.delegate = self
         self.formTable.dataSource = self
-        
+                
+        let row: LabelRow = LabelRow(tag: "tagtag")
+        print("\(row.tag)")
+        row.value = "hahahhahahahah"
     }
     //MARK:-
     //MARK:delegate

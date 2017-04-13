@@ -10,4 +10,5 @@ import Foundation
 
 open class FormTableViewSourceHelper {
     
+    public var tableView: UITableView!
 }

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D04CF12F3ADC31E9F5AA276B77FC03A734E830D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8076AEB109CE7E2B0041937CBD6B3EF50F7E9A3B" : 9223372036854775807,
+    "D04CF12F3ADC31E9F5AA276B77FC03A734E830D4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D207F932-C993-48DA-86B3-F4B6E78005D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8076AEB109CE7E2B0041937CBD6B3EF50F7E9A3B" : "",
+    "D04CF12F3ADC31E9F5AA276B77FC03A734E830D4" : "SSFormSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SSFormSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/SSFormSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jiazifa\/SSOCKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8076AEB109CE7E2B0041937CBD6B3EF50F7E9A3B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jiazifa\/SSFormSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D04CF12F3ADC31E9F5AA276B77FC03A734E830D4"
+    }
+  ]
+}

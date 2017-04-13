@@ -11,11 +11,18 @@ import Foundation
 
 open class RowOf<T: Equatable>: BaseRow {
     
-    private var _value: T? {
-        didSet {}
+    open var value: T? {
+        didSet {
+            guard let form = section?.form else { return }
+            wasChanged = true
+            if let delegate = form.delegate {
+                delegate.valueHasBeenChanged(for: self, oldValue: oldValue, newValue: value)
+                callbackOnChange?()
+            }
+            guard let t = tag else { return }
+            form.tagToValue[t] = (value != nil ? value : NSNull())
+        }
     }
-    
-    open var value: T?
     
     public override var baseValue: Any? {
         get { return value }
@@ -92,8 +99,8 @@ open class BaseRow: FormRowType {
     var callbackOnRowValidationChanged: (() -> Void)?
     var _inlineRow: BaseRow?
     
-    public internal(set) var wasBlurred = false
-    public internal(set) var wasChanged = false
+    public internal(set) var wasBlurred = false//模糊
+    public internal(set) var wasChanged = false//改变
     /**
      protocol Taggable
      */
@@ -117,22 +124,9 @@ open class BaseRow: FormRowType {
         get { return nil }
     }
     
-    public var disabled: Condition? {
-        willSet {
-            
-        }
-        didSet {
-            
-        }
-    }
-    public var hidden: Condition? {
-        willSet {
-            
-        }
-        didSet {
-            
-        }
-    }
+    public var disabled: Condition?
+    
+    public var hidden: Condition?
     
     public var isDisabled: Bool { return disabledCache }
     public var isHidden: Bool { return hiddenCache }
@@ -146,9 +140,13 @@ open class BaseRow: FormRowType {
         }
     }
     
+    public weak var section: Section?
+    
     public static var estimatedRowHeight: CGFloat = 44.0
     
     public required init(tag: String? = nil) {
         self.tag = tag
     }
+    public final var indexPath: IndexPath?
+    
 }
