@@ -47,3 +47,11 @@ public protocol RowType:TypedRowType {
     init(_ tag: String?, _ initializer:(Self) -> Void)
 }
 
+extension RowType where Self: BaseRow {
+    public init(_ tag: String? = nil, _ initializer:(Self) -> Void = {
+        _ in }) {
+        self.init(tag: tag)
+        RowDefaults.rowInitialization["\(type(of: self))"]?(self)
+        initializer(self)
+    }
+}

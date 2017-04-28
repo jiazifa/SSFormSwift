@@ -32,10 +32,6 @@ open class  _LabelRow: Row<LabelCell> {
 }
 
 public final class LabelRow: _LabelRow, RowType {
-    public init(_ tag: String?, _ initializer: (LabelRow) -> Void) {
-        super.init(tag: tag)
-    }
-    
     public required init(tag: String?) {
         super.init(tag: tag)
     }

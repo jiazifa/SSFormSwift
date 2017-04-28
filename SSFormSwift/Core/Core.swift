@@ -72,41 +72,7 @@ public enum ControllerProvider<VCType: UIViewController> {
 
 //MARK: -
 //MARK: Condition
-public enum Condition {
-    /**
-     计算回调的内部条件
-     */
-    case function([String], (Form) -> Bool)
-    /**
-     用谓词来计算内调
-     */
-    case predicate(NSPredicate)
-}
 
-extension Condition: ExpressibleByBooleanLiteral {
-    public init(booleanLiteral value: Bool) {
-        self = Condition.function([]) {_ in return value}
-    }
-}
-extension Condition: ExpressibleByStringLiteral {
-    public init(stringLiteral value: String) {
-        self = .predicate(NSPredicate(format: value))
-    }
-    
-    /**
-     Initialize a Condition with a string that will be converted to a NSPredicate
-     */
-    public init(unicodeScalarLiteral value: String) {
-        self = .predicate(NSPredicate(format: value))
-    }
-    
-    /**
-     Initialize a Condition with a string that will be converted to a NSPredicate
-     */
-    public init(extendedGraphemeClusterLiteral value: String) {
-        self = .predicate(NSPredicate(format: value))
-    }
-}
 
 //MARK: -
 //MARK: FormControllerAnimationProtocol

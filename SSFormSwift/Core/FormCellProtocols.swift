@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// 针对cell的协议，其中要求实现几种基本的方法
 public protocol BaseCellType: class {
     
     /// 单元格的高度

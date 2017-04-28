@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// 继承于UITableViewCell，提供基础的方法
 open class BaseCell: UITableViewCell, BaseCellType {
     
     public var baseRow: BaseRow! { return nil }
@@ -44,9 +45,12 @@ open class BaseCell: UITableViewCell, BaseCellType {
     }
 }
 
+
+/// 泛型，提供value属性，value属性的变化会调用代理的方法
 open class Cell<T:Equatable>: BaseCell, TypeCellType {
     public typealias Value = T
     
+    /// 这个属性持有BaseRow，当这个值变化的时候，设置回调处理变化
     public weak var row: RowOf<T>!
     
     public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {

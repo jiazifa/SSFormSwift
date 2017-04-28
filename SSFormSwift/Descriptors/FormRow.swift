@@ -9,18 +9,12 @@
 import Foundation
 
 
+/// 继承于BaseRow，但是其中的value属性持有BaseRow对象，用来处理对应的变化
 open class RowOf<T: Equatable>: BaseRow {
     
     open var value: T? {
         didSet {
-            guard let form = section?.form else { return }
-            wasChanged = true
-            if let delegate = form.delegate {
-                delegate.valueHasBeenChanged(for: self, oldValue: oldValue, newValue: value)
-                callbackOnChange?()
-            }
-            guard let t = tag else { return }
-            form.tagToValue[t] = (value != nil ? value : NSNull())
+            print("value changed：\(String(describing: value))")
         }
     }
     
@@ -34,7 +28,7 @@ open class RowOf<T: Equatable>: BaseRow {
     }
 }
 /**
- 类 --> 代表了row
+ 类 --> 代表了row，(提供了cell的生成方法)
  */
 open class Row<Cell: CellType>: RowOf<Cell.Value>, TypedRowType where Cell: BaseCell {
     
@@ -75,11 +69,6 @@ open class Row<Cell: CellType>: RowOf<Cell.Value>, TypedRowType where Cell: Base
     
     open override func didSelect() {
         super.didSelect()
-        if !isDisabled {
-            cell?.didSelect()
-        }
-        customDidSelect()
-        callbackCellOnSelection?()
     }
     
     open func customDidSelect() {}
@@ -106,6 +95,8 @@ open class BaseRow: FormRowType {
      */
     public var tag: String?
     
+    
+    
     /**
      protocol FormRowType
      */
@@ -124,29 +115,13 @@ open class BaseRow: FormRowType {
         get { return nil }
     }
     
-    public var disabled: Condition?
-    
-    public var hidden: Condition?
-    
-    public var isDisabled: Bool { return disabledCache }
-    public var isHidden: Bool { return hiddenCache }
-    
-    var hiddenCache = false
-    var disabledCache = false {
-        willSet {
-            if newValue && !disabledCache {
-                baseCell.cellResignFirstResponder()
-            }
-        }
-    }
-    
-    public weak var section: Section?
-    
     public static var estimatedRowHeight: CGFloat = 44.0
+    
+    /// 对应的区---描述类
+    public var section: Section?
     
     public required init(tag: String? = nil) {
         self.tag = tag
     }
     public final var indexPath: IndexPath?
-    
 }
