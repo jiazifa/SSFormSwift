@@ -20,16 +20,13 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
-        let form: Form = Form.init()
-        let section: Section = Section()
-        let label = LabelRow(tag: "tagtag")
-        label.value = "labelCell"
-        section.add(formRow: label)
+        let tableView: UITableView = UITableView.init(frame: view.bounds, style: .plain)
         
+        view.addSubview(tableView)
     }
     //MARK:-
     //MARK:delegate
-    
+   
 
     //MARK:-
     //MARK:helper
