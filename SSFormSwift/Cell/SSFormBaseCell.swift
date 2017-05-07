@@ -51,6 +51,5 @@ open class SSFormBaseCell: UITableViewCell,SSFormDescriptorCell {
     }
     
     override open func setValue(_ value: Any?, forUndefinedKey key: String) {
-        print("\(key) --> \(value)")
     }
 }

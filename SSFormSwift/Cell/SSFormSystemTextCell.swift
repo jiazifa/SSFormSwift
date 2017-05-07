@@ -21,7 +21,6 @@ public class SSFormSystemTextCell: SSFormBaseCell {
     
     override func configure() {
         super.configure()
-        print("\(self.detailTextLabel?.text)")
     }
 }
 

@@ -152,7 +152,6 @@ open class SSFormTableViewSourceHelper: NSObject, UITableViewDelegate, UITableVi
     public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         let cell:SSFormBaseCell = tableView.cellForRow(at: indexPath) as! SSFormBaseCell
         guard cell.rowDescriptor != nil else { return nil}
-        print("titleForDeleteConfirmationButtonForRowAt\(cell.rowDescriptor?.titleForDeleteConfirmationButton)")
         return cell.rowDescriptor?.titleForDeleteConfirmationButton
     }
     
