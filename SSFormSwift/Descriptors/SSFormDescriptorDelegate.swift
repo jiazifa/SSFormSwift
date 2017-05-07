@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol SSFormDescriptorDelegate {
+public protocol SSFormDescriptorDelegate {
     
     /// 将区移除的代理方法
     ///

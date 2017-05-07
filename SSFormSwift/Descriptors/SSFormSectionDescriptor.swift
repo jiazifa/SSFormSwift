@@ -11,15 +11,15 @@ import UIKit
 
 private var myContext = 0
 
-class SSFormSectionDescriptor: NSObject {
+open class SSFormSectionDescriptor: NSObject {
     //MARK:-
     //MARK:property
     
     /// 区头的文字
-    var title:String?
+    public var title:String?
     
     /// 区头的高度
-    var height:CGFloat = 0.0
+    public var height:CGFloat = 0.0
     
     /// 包含的所有的单元格描述对象
     private dynamic var formRows:[SSFormRowDescriptor] = []
@@ -28,15 +28,15 @@ class SSFormSectionDescriptor: NSObject {
     }
     
     /// 表格的描述对象
-    var formDescriptor:SSFormDescriptor?
+    public var formDescriptor:SSFormDescriptor?
     
     /// 区的添加动画类型
-    var insertAnimation:UITableViewRowAnimation = .automatic
+    public var insertAnimation:UITableViewRowAnimation = .automatic
     /// 区的删除动画类型
-    var deleteAnimation:UITableViewRowAnimation = .automatic
+    public var deleteAnimation:UITableViewRowAnimation = .automatic
     
     /// 区的刷新动画类型
-    var freshAnimation:UITableViewRowAnimation = .automatic
+    public var freshAnimation:UITableViewRowAnimation = .automatic
     
     //MARK:-
     //MARK:lifeCycle
@@ -44,7 +44,7 @@ class SSFormSectionDescriptor: NSObject {
     /// 初始化方法
     ///
     /// - Parameter title: 区头的标题
-    init(_ title:String) {
+    public init(_ title:String) {
         super.init()
         self.title = title
         self.addObserver(self, forKeyPath: "formRows", options: [.new,.old], context: &myContext)
@@ -161,7 +161,7 @@ class SSFormSectionDescriptor: NSObject {
     
     //MARK:-
     //MARK:KVC
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         /*
         if self.formDescriptor?.delegate == nil { return}
         guard keyPath == "formRows" else { return}

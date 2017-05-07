@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-class SSFormBaseCell: UITableViewCell,SSFormDescriptorCell {
+open class SSFormBaseCell: UITableViewCell,SSFormDescriptorCell {
     var rowDescriptor:SSFormRowDescriptor?
     public var value:AnyObject?
     
     //MARK:-
     //MARK:liftCycle
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         configure()
     }
@@ -26,12 +26,12 @@ class SSFormBaseCell: UITableViewCell,SSFormDescriptorCell {
         configure()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
@@ -50,7 +50,7 @@ class SSFormBaseCell: UITableViewCell,SSFormDescriptorCell {
         self.detailTextLabel?.font = UIFont.preferredFont(forTextStyle: .body)
     }
     
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+    override open func setValue(_ value: Any?, forUndefinedKey key: String) {
         print("\(key) --> \(value)")
     }
 }

@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 private var myContext = 0
-class SSFormDescriptor: NSObject {
+open class SSFormDescriptor: NSObject {
     
     //MARK:-
     //MARK:properties
     
     /// 表名
-    var title:String = ""
+    public var title:String = ""
     
     /// 获得区的数量
     public var formSectionCount:Int {
@@ -25,12 +25,12 @@ class SSFormDescriptor: NSObject {
     
     /// 【私有变量】
     private dynamic var formSections:[SSFormSectionDescriptor] = []
-    var delegate:SSFormDescriptorDelegate?
+    public var delegate:SSFormDescriptorDelegate?
     //MARK:-
     //MARK:lifeCycle
 
     /// 初始化
-    override init() {
+    public override init() {
         super.init()
         self.addObserver(self, forKeyPath: "formSections", options: [.new,.old], context: &myContext)
     }
@@ -38,7 +38,7 @@ class SSFormDescriptor: NSObject {
     /// 初始化
     ///
     /// - Parameter title: 表名
-    init(_ title:String) {
+    public init(_ title:String) {
         super.init()
         self.title = title
         self.addObserver(self, forKeyPath: "formSections", options: [.new,.old], context: &myContext)
@@ -75,7 +75,7 @@ class SSFormDescriptor: NSObject {
     
     //MARK:-
     //MARK:KVC
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
     }
     

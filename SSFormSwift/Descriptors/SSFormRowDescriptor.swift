@@ -12,89 +12,89 @@ import UIKit
 private var myContext = 0
 
 /// 点击单元格的回调事件
-typealias OnClickedBlock = (_ formRow:SSFormRowDescriptor, _ indexPath:IndexPath) -> Void
+public typealias OnClickedBlock = (_ formRow:SSFormRowDescriptor, _ indexPath:IndexPath) -> Void
 
 /// 在编辑状态下，点击到按钮的回调事件，如果没有实现，就会执行默认的动作
-typealias EditingStyleHandle = (_ formRow:SSFormRowDescriptor, _ style:UITableViewCellEditingStyle, _ indexPath:IndexPath) -> Void
+public typealias EditingStyleHandle = (_ formRow:SSFormRowDescriptor, _ style:UITableViewCellEditingStyle, _ indexPath:IndexPath) -> Void
 
-class SSFormRowDescriptor: NSObject {
+open class SSFormRowDescriptor: NSObject {
     
     /// 对应单元格的值，对应的cell进行解析
-    dynamic var value:AnyObject! {
+    public dynamic var value:AnyObject! {
         didSet(newValue) {
             self.sectionDescriptor?.formDescriptor?.delegate?.formRowDescriptorValueHasChanged(self, newValue: newValue)
         }
     }
     
     /// 单元格的高度
-    var height : CGFloat
+    public var height : CGFloat
     
     /// 对应的单元格
-    var cell:SSFormBaseCell?
+    public var cell:SSFormBaseCell?
     
     /// 对应的单元格的类型
-    var cellClass: AnyClass
+    public var cellClass: AnyClass
     
     /// 单元格的设置
-    var cellConfig:[String:AnyObject] = [:]
+    public var cellConfig:[String:AnyObject] = [:]
     
     /// 单元格描述对象对应的区文件
-    var sectionDescriptor:SSFormSectionDescriptor?
+    public var sectionDescriptor:SSFormSectionDescriptor?
     
     /// 代理对象
-    var delegate:AnyObject?
+    public var delegate:AnyObject?
     
     /// 可以编辑的属性
-    var canEditRow:Bool = false {
+    public var canEditRow:Bool = false {
         didSet {
             let value = self.value
             self.value = value
         }
     }
     
-    var canMoveRow:Bool = false {
+    public var canMoveRow:Bool = false {
         didSet {
             let value = self.value
             self.value = value
         }
     }
     /// 编辑的样式(删除/添加)
-    var editingStyle:UITableViewCellEditingStyle = .none
+    public var editingStyle:UITableViewCellEditingStyle = .none
     
     /// 单元格的样式
-    var cellStyle: UITableViewCellStyle = .default
+    public var cellStyle: UITableViewCellStyle = .default
     
     ///删除样式的标题
-    var titleForDeleteConfirmationButton:String?
+    public var titleForDeleteConfirmationButton:String?
     
     ///编辑状态下，侧滑显示的响应集合
-    var editActions:[UITableViewRowAction]?
+    public var editActions:[UITableViewRowAction]?
     
     
     /// 在编辑状态下，点击到按钮的回调事件，如果没有实现，就会执行默认的动作
-    var editingStyleHandle:EditingStyleHandle?
+    public var editingStyleHandle:EditingStyleHandle?
     
     /// 点击到的回调事件
-    var onClickedBlock:OnClickedBlock?
+    public var onClickedBlock:OnClickedBlock?
     
     /// 添加的动画效果
-    var insertAnimation:UITableViewRowAnimation = .none
+    public var insertAnimation:UITableViewRowAnimation = .none
     
     /// 删除的动画效果
-    var deleteAnimation:UITableViewRowAnimation = .none
+    public var deleteAnimation:UITableViewRowAnimation = .none
     
     /// 刷新的动画效果
-    var freshAnimation:UITableViewRowAnimation = .none
+    public var freshAnimation:UITableViewRowAnimation = .none
     
     /// 点击添加动作，添加一行，如果这个值不为空，那么就会将这一行添加进去
-    var addFormRow:SSFormRowDescriptor?
+    public var addFormRow:SSFormRowDescriptor?
     /// 初始化方法
     ///
     /// - Parameters:
     ///   - height: 高度
     ///   - cellClass: 对应的单元格的类
     ///   - value: 单元格的值
-    init(_ height:CGFloat,cellClass:SSFormBaseCell.Type, value:AnyObject) {
+    public init(_ height:CGFloat,cellClass:SSFormBaseCell.Type, value:AnyObject) {
         self.height = height
         self.cellClass = cellClass
         self.value = value

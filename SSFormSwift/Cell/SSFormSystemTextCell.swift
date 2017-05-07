@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SSFormSystemTextCell: SSFormBaseCell {
+public class SSFormSystemTextCell: SSFormBaseCell {
     
     override func update() {
         super.update()
@@ -26,7 +26,7 @@ class SSFormSystemTextCell: SSFormBaseCell {
 }
 
 
-class demoCell: SSFormBaseCell {
+public class demoCell: SSFormBaseCell {
     var name:String = ""
     
     override func update() {
